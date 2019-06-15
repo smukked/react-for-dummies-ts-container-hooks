@@ -1,7 +1,7 @@
 import React from 'react';
 
 import IMovie from '../interfaces/IMovie';
-import AppStore from '../Models/AppStore';
+import AppStore from '../models/AppStore';
 
 interface IMovieCardProps extends AppStore {
     movie: IMovie;

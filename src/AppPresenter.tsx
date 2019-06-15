@@ -4,7 +4,7 @@ import styles from './App.module.scss';
 import MovieList from './components/MovieList';
 import Spinner from './components/Spinner';
 import ToggleButton from './components/ToggleButton';
-import AppStore from './Models/AppStore';
+import AppStore from './models/AppStore';
 
 const AppPresenter: React.FC<AppStore> = (props) => {
 

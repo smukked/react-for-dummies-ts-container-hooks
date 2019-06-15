@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import AppPresenter from './AppPresenter';
 import IMovie from './interfaces/IMovie';
-import AppStore from './Models/AppStore';
+import AppStore from './models/AppStore';
 import { getMyFavoriteMovies } from './services/MovieService';
 
 interface IAppProps {

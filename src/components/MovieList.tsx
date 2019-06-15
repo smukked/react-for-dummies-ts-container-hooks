@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AppStore from '../Models/AppStore';
+import AppStore from '../models/AppStore';
 import MovieCard from './MovieCard';
 import styles from './MovieList.module.scss';
 
