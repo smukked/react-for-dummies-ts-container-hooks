@@ -1,0 +1,36 @@
+.toggleButton {
+    .text {
+        vertical-align: top;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+
+    .container {
+        border: solid 1px black;
+        width: 40px;
+        height: 20px;
+        border-radius: 10px;
+        padding: 2px;
+        margin-bottom: 3px;
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+
+        .button {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: black;
+        }
+
+        &.on {
+            background-color: black;
+
+            .button {
+                float: right;
+                background-color: white;
+            }
+        }
+    }
+
+}
