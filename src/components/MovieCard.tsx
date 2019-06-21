@@ -9,13 +9,13 @@ interface IMovieCardProps extends AppStore {
 
 const MovieCard: React.FC<IMovieCardProps> = (props) => {
     return (
-        <div className="card" style={{ width: "18rem", margin: "0 20px 20px 0" }}>
+        <div className="card">
             {props.showAll && <img src={props.movie.poster} className="card-img-top" alt={props.movie.title} />}
-            <div className="card-body" style={{ position: "relative" }}>
-                <i onClick={() => { props.onRemovePoster(props.movie.id) }} className="far fa-times-circle" style={{ position: "absolute", right: "5px", top: "5px", cursor: "pointer" }}></i>
+            <div className="card-body">
+                <i onClick={() => { props.onRemovePoster(props.movie.id) }} className="far fa-times-circle"></i>
                 <h5 className="card-title">{props.movie.title} ({props.movie.year})</h5>
                 {props.showAll && <p className="card-text">{props.movie.plot}</p>}
-                <div style={{ marginBottom: "10px" }}>
+                <div className="card-rating">
                     {props.movie.ratings.map((rating, i) => {
                         return <div key={i}>
                             <small className="text-muted" key={i}>
